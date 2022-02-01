@@ -1,8 +1,7 @@
 import { Layout } from "../components/common";
 import { Smile } from "../components/icons";
-
+import Link from 'next/link';
 import {
-  EmailShareButton,
   EmailIcon,
 } from 'react-share';
 
@@ -37,9 +36,13 @@ const About = () => {
         <p>QuePerlita.com esta lejos de ser perfecta. Se seguiran añadiendo mas funcionalidades para mejorar la experiencia del usuario y seguir disfrutando. <br/><br/> Por favor, reporta cualquier error que pueda ocurrir en la pagina o aportanos ideas para seguir mejorando.<br/><br/> Vuestro feedback es muy importante para nosotros.</p>
 
         <div className="p-4 justify-center flex">
-          <EmailShareButton className="flex justify-center align-middle items-center ">
-            <EmailIcon size={64} round={true}/>
-          </EmailShareButton>
+          <Link href ="mailto:juandxdev@gmail.com">
+          <a>
+          <EmailIcon size={64} round={true} />
+          </a>
+          </Link>
+ 
+          
         </div>
       </div>
     </div>
